@@ -1,0 +1,6 @@
+{
+  "name": "Kebab Turki-Pollito",
+  "description": "Plataforma oficial de pedidos online y seguimiento en tiempo real para Kebab Turki-Pollito en La Zubia (Granada). Especialistas en Shawarma, Döner Kebab, Menús y Gratinados 100% Halal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

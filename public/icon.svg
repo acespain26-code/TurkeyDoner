@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="45%" stop-color="#b91c1c" />
+      <stop offset="100%" stop-color="#7f1d1d" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <!-- Background disc -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  
+  <!-- Outer golden ring -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="url(#goldGrad)" stroke-width="8" stroke-dasharray="12 6" opacity="0.8" />
+  <circle cx="256" cy="256" r="218" fill="none" stroke="#fef08a" stroke-width="2" opacity="0.5" />
+
+  <!-- Crescent moon -->
+  <path d="M 285 90 A 155 155 0 1 0 410 320 A 175 175 0 1 1 285 90 Z" fill="url(#goldGrad)" opacity="0.3" />
+
+  <!-- Flame motif behind KT -->
+  <path d="M 256 100 C 275 145 305 180 305 220 C 305 250 285 270 256 270 C 227 270 207 250 207 220 C 207 180 237 145 256 100 Z" fill="url(#goldGrad)" opacity="0.9" filter="url(#shadow)" />
+  <path d="M 256 135 C 267 165 285 190 285 215 C 285 235 272 250 256 250 C 240 250 227 235 227 215 C 227 190 245 165 256 135 Z" fill="#fef08a" />
+
+  <!-- Monogram KT -->
+  <g filter="url(#shadow)">
+    <!-- Letter K -->
+    <path d="M 145 250 L 185 250 L 185 390 L 145 390 Z" fill="#ffffff" />
+    <path d="M 185 320 L 235 250 L 285 250 L 215 340 L 288 390 L 238 390 L 185 345 Z" fill="#ffffff" />
+    <!-- Letter T -->
+    <path d="M 275 250 L 375 250 L 375 285 L 343 285 L 343 390 L 307 390 L 307 285 L 275 285 Z" fill="#ffffff" />
+  </g>
+
+  <!-- Subtitle Banner -->
+  <rect x="96" y="415" width="320" height="42" rx="21" fill="#1c1917" opacity="0.85" stroke="url(#goldGrad)" stroke-width="2" />
+  <text x="256" y="442" fill="#fef08a" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="900" text-anchor="middle" letter-spacing="4">KEBAB TURKI</text>
+</svg>
